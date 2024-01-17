@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ProjectMAP.Models.MedicalImage>
+﻿@model PaginatedList<ProjectMAP.Models.MedicalImage>
 
 @{
     ViewData["Title"] = "Index";
@@ -9,23 +9,32 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by Pacient: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Type)
+                Type
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Date)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParam"]" asp-routecurrentFilter="@ViewData["CurrentFilter"]">Date</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Pacient)
+                Pacient
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Doctor)
+                Doctor
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Diagnostic)
+                Diagnostic
             </th>
             <th></th>
         </tr>
@@ -40,20 +49,38 @@
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Pacient.PacientID)
+                @Html.DisplayFor(modelItem => item.Pacient.PacientName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Doctor.DoctorID)
+                @Html.DisplayFor(modelItem => item.Doctor.DoctorName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Diagnostic.DiagnosticID)
+                @Html.DisplayFor(modelItem => item.Diagnostic.DiagnosticName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.MedicalImageID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MedicalImageID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MedicalImageID">Delete</a>
+                <a asp-action="Details" asp-route-id="@item.MedicalImageID">Details</a> 
+                    <!--<a asp-action="Details" asp-route-id="@item.MedicalImageID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MedicalImageID">Delete</a> -->
             </td>
         </tr>
 }
     </tbody>
 </table>
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>
