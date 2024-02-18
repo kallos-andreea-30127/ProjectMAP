@@ -251,3 +251,12 @@ C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\obj\Debug\net7.0\refint\
 C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\obj\Debug\net7.0\ProjectMAP.pdb
 C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\obj\Debug\net7.0\ProjectMAP.genruntimeconfig.cache
 C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\obj\Debug\net7.0\ref\ProjectMAP.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\obj\Debug\net7.0\ProjectMAP.MvcApplicationPartsAssemblyInfo.cs
