@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
@@ -12,6 +13,7 @@ using static System.Reflection.Metadata.BlobBuilder;
 
 namespace ProjectMAP.Controllers
 {
+    [Authorize(Policy = "Doctor")]
     public class MedicalImagesController : Controller
     {
         private readonly ClinicContext _context;
