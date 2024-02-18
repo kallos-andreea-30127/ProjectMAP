@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProjectMAP.Data;
 using Microsoft.AspNetCore.Identity;
+using ProjectMAP.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 
 builder.Services.AddDbContext<IdentityContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddSignalR();
 
 //Adaugare autentificare
 builder.Services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>().AddEntityFrameworkStores<IdentityContext>();
@@ -68,7 +71,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-app.MapRazorPages();
 
+app.MapHub<ChatHub>("/Chat");
+
+app.MapRazorPages();
 
 app.Run();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dO8uhvM31Sfo1pE9jhVy/dJ9DwZ0bnF60WwSIQd91+c=",
+  "Hash": "dt9QFRmL0T/ypNN2wUlV9IbS/ChOanwp6s3s44kAAuA=",
   "Source": "ProjectMAP",
   "BasePath": "_content/ProjectMAP",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\andii\\Desktop\\master\\MAP\\ProjectMAP\\ProjectMAP\\wwwroot\\js\\chat.js",
+      "SourceId": "ProjectMAP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andii\\Desktop\\master\\MAP\\ProjectMAP\\ProjectMAP\\wwwroot\\",
+      "BasePath": "_content/ProjectMAP",
+      "RelativePath": "js/chat.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chat.js"
+    },
+    {
       "Identity": "C:\\Users\\andii\\Desktop\\master\\MAP\\ProjectMAP\\ProjectMAP\\wwwroot\\js\\site.js",
       "SourceId": "ProjectMAP",
       "SourceType": "Discovered",
@@ -2089,6 +2106,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\andii\\Desktop\\master\\MAP\\ProjectMAP\\ProjectMAP\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "ProjectMAP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andii\\Desktop\\master\\MAP\\ProjectMAP\\ProjectMAP\\wwwroot\\",
+      "BasePath": "_content/ProjectMAP",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "C:\\Users\\andii\\Desktop\\master\\MAP\\ProjectMAP\\ProjectMAP\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "ProjectMAP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andii\\Desktop\\master\\MAP\\ProjectMAP\\ProjectMAP\\wwwroot\\",
+      "BasePath": "_content/ProjectMAP",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
     }
   ]
 }

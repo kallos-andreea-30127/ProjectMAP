@@ -260,3 +260,4 @@ C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microso
 C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\obj\Debug\net7.0\ProjectMAP.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\andii\Desktop\master\MAP\ProjectMAP\ProjectMAP\bin\Debug\net7.0\libman.json
